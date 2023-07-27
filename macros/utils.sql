@@ -127,7 +127,7 @@
     {% if identifier.startswith('"') %}
       {{ return(identifier) }}
     {% else %}
-      {{ return('"' ~ identifier ~ '"') }}
+      {{ return(identifier) }}
     {% endif %}
 {%- endmacro %}
 
